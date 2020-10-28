@@ -1,0 +1,43 @@
+{
+  "name": "sample-app",
+  "homepage": "https://github.com/byrne-greg/testcafe-visual-regression",
+  "author": "Greg Byrne",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "allure-commandline": "^2.13.0",
+    "merge-img": "^2.1.3",
+    "npm": "^6.14.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-allure-expanded": "^1.1.0",
+    "testcafe-reporter-csv": "^1.0.0",
+    "testcafe-reporter-xray-json": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "testcafe firefox:headless -s ./tests/vrt-screenshots ./tests/*.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "fs-extra": "^7.0.1",
+    "log4js": "^3.0.6",
+    "path": "^0.12.7",
+    "resemblejs": "^3.2.5",
+    "testcafe": "^1.9.3",
+    "xpath-to-css": "^1.0.5"
+  }
+}
